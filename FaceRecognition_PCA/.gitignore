@@ -1,0 +1,78 @@
+# ============================================================
+#  Datos personales — NUNCA subir a git
+# ============================================================
+# Selfies originales del usuario (cualquier formato)
+FRG/faces/alan*.bmp
+FRG/faces/alan*.jpg
+FRG/faces/alan*.jpeg
+FRG/faces/alan*.png
+
+# Augmentaciones generadas a partir de las selfies
+FRG/faces/alan_aug/
+
+# Dataset genérico de caras (s*.bmp) — también excluido por respeto a privacidad
+FRG/faces/s*.bmp
+FRG/faces/temp/
+
+# Modelo PCA entrenado (codifica matemáticamente las caras de Alan)
+FRG/data/eigen.txt
+FRG/data/mean.txt
+FRG/data/facesdata.txt
+
+# Lista de entrenamiento (contiene rutas a fotos personales)
+FRG/list/train_list.txt
+
+# Mismos artefactos cuando ya están copiados a la app Android
+android-app/app/src/main/assets/eigen.txt
+android-app/app/src/main/assets/mean.txt
+android-app/app/src/main/assets/facesdata.txt
+
+# ============================================================
+#  Build artifacts C++ (CMake)
+# ============================================================
+FRG/build/
+FRG/cmake-build-*/
+FRG/CMakeFiles/
+FRG/CMakeCache.txt
+FRG/cmake_install.cmake
+FRG/Makefile
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+
+# ============================================================
+#  Build artifacts Android / Gradle
+# ============================================================
+android-app/build/
+android-app/.gradle/
+android-app/.kotlin/
+android-app/.idea/
+android-app/local.properties
+android-app/app/build/
+android-app/captures/
+android-app/.cxx/
+android-app/**/release/
+*.iml
+*.apk
+*.aab
+*.keystore
+
+# ============================================================
+#  Python
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ============================================================
+#  IDE / Editor
+# ============================================================
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
